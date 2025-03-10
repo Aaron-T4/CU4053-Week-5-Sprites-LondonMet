@@ -1,6 +1,5 @@
 #pragma once
 
-
 #include <SFML/Graphics.hpp>
 #include "Framework/BaseLevel.h"
 #include "Framework/Input.h"
@@ -9,7 +8,8 @@
 #include <iostream>
 #include "Player.h"
 #include "Enemy.h"
-
+#include "Cursor.h"
+#include "Background.h"
 
 class Level : BaseLevel {
 public:
@@ -27,8 +27,14 @@ private:
 
 	Player p1;
 
-	Enemy e1, e2;
-	sf::Texture enemytexture1;
-	sf::Texture enemytexture2;
+	sf::Texture e1Texture;
+	Enemy e1; 
+
+	sf::Texture e2Texture;
+	Enemy e2;
+
+	Cursor mousePointer; 
+
+	Background bg;
 
 };

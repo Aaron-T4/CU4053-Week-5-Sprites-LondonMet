@@ -1,14 +1,12 @@
 #pragma once
 #include "Framework/GameObject.h"
-class Enemy :
-    public GameObject
+class Enemy : public GameObject
 {
+
 public:
-    Enemy();
-    ~Enemy();
+	Enemy();
+	~Enemy();
 
-    void update(float dt) override;
-
-
+	void update(float dt)  override;
 };
 
